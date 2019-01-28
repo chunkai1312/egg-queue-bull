@@ -3,6 +3,8 @@
 exports.queue = {
   delegate: 'queue',
   baseDir: 'queue',
+  app: true,
+  agent: false,
 };
 
 exports.bull = {

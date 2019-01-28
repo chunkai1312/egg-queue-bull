@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = app => {
-  require('./lib/loader')(app);
+  if (app.config.queue.app) require('./lib/loader')(app);
 };

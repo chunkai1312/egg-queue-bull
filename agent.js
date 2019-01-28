@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = agent => {
-  require('./lib/loader')(agent);
+  if (agent.config.queue.agent) require('./lib/loader')(agent);
 };
