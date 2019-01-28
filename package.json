@@ -1,6 +1,6 @@
 {
   "name": "egg-queue-bull",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Provide job queue for egg, powered by Bull",
   "eggPlugin": {
     "name": "queue"
@@ -8,7 +8,9 @@
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "queue",
+    "bull"
   ],
   "dependencies": {
     "bull": "^3.0.0"
@@ -37,11 +39,11 @@
     "autod": "autod"
   },
   "files": [
+    "lib",
     "app",
     "config",
-    "agent.js",
-    "lib",
-    "app.js"
+    "app.js",
+    "agent.js"
   ],
   "ci": {
     "version": "8, 9"
